@@ -35,3 +35,14 @@ let multy_by3 = multiplfy(3); //curryng fun by 3
 console.log(multy_by3(8));
 console.log(multy_by3(9));
 console.log(multy_by3(10));
+
+let sum = function (a) {
+  return function (b) {
+    if (b) {
+      return sum(a + b);
+    }
+    return a;
+  };
+};
+
+console.log(sum(2)(4)(8)(6)());
