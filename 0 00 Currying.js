@@ -38,10 +38,7 @@ console.log(multy_by3(10));
 
 let sum = function (a) {
   return function (b) {
-    if (b) {
-      return sum(a + b);
-    }
-    return a;
+    return b ? sum(a + b) : a;
   };
 };
 
