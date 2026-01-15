@@ -1,6 +1,6 @@
 //Fun currying can done by (i)bind method (ii)closures
 let multiply_fun = function (x, y) {
-  //here setting x=2 for multiply(2)
+  //here setting x=2 for multiply(2) by this
   //x=5 multiply(5)
   return x * y;
 };
