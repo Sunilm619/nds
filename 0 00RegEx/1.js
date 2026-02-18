@@ -7,4 +7,4 @@ for (let i of str) {
   console.log(i);
 }
 
-//stacky33
+stacky33;
