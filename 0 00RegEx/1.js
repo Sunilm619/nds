@@ -7,4 +7,10 @@ for (let i of str) {
   console.log(i);
 }
 
+stacky33;
+line33;
+let c = "abc";
+l;
+KeyboardEvent;
+lk;
 stack2={};

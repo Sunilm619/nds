@@ -4,7 +4,9 @@ function remove_duplicates(nums) {
   let pointer = 0;
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] > nums[pointer]) {
+      console.log(`i ${i}`);
       pointer++;
+      console.log(`ponter ${pointer}`);
       nums[pointer] = nums[i];
     }
   }
