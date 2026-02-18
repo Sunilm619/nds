@@ -13,3 +13,4 @@ let c = "abc";
 l;
 KeyboardEvent;
 lk;
+stack2={};
