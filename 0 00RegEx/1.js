@@ -6,3 +6,5 @@ let str3 = str2.replace(/\d+/g, "");
 for (let i of str) {
   console.log(i);
 }
+
+stack2={};
