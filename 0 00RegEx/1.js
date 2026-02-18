@@ -8,3 +8,8 @@ for (let i of str) {
 }
 
 stacky33;
+line33;
+let c = "abc";
+l;
+KeyboardEvent;
+lk;
