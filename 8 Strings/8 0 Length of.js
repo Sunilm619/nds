@@ -1,4 +1,4 @@
-//using in built
+//using in built app1
 
 // function lenoflast(s) {
 //   console.log(s.length);
@@ -18,18 +18,46 @@
 // let s = "   fly me   to   the mokhkjhkon  ";
 // console.log(lenoflast(s));
 
-function lenoflast(s) {
-  let len = s.length;
-  let lastindexB = len - 1;
-  while (len - 1 > 0) {
-    if (s[len - 1] !== " ") {
+//T-O(n)
+//S-O(1)
+
+//app2
+// function lenoflast(s) {
+//   let len = s.length;
+//   let lastindexB = len - 1;
+//   while (len > 0) {
+//     if (s[len - 1] !== " ") {
+//       break;
+//     }
+//     lastindexB--;A
+//   }
+//   console.log(lastindexB);
+//   // return true;
+// }
+
+// let s = "   fly me   to   the mokhkjhkon  ";
+// console.log(lenoflast(s));
+
+
+//T-O(n)
+//S-O(1)
+
+//app3
+function Len_of_word(str) {
+  let stringindex = str.length - 1;
+  let lastcount = 0;
+  while (stringindex > 0) {
+    if (str[stringindex] !== " ") {
+      ++lastcount;
+    } else if (lastcount > 0) {
       break;
     }
-    lastindexB--;
+    --stringindex;
   }
-  console.log("nkn");
-  return true;
-}
+  return lastcount;
+  // console.log(len0fstring);
+} 
 
-let s = "   fly me   to   the mokhkjhkon  ";
-console.log(lenoflast(s));
+let str = "   fly me   to   the mokhkjhkon  ";
+
+console.log(Len_of_word(str));

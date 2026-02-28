@@ -21,15 +21,29 @@
 function lenoflast(s) {
   let len = s.length;
   let lastindexB = len - 1;
-  while (len - 1 > 0) {
-    if (s[len - 1] !== " ") {
+
+  //   console.log(lastindexB);
+  while (lastindexB > 0) {
+    if (s[lastindexB] === " ") {
+      --lastindexB;
+    } else {
       break;
     }
-    lastindexB--;
   }
-  console.log("nkn");
-  return true;
+  let lentth_oflast = 0;
+  while (lastindexB > 0) {
+    if (s[lastindexB] !== " ") {
+      ++lentth_oflast;
+      --lastindexB;
+    } else {
+      break;
+    }
+  }
+
+  return lentth_oflast;
 }
 
 let s = "   fly me   to   the mokhkjhkon  ";
+
+lenoflast(s);
 console.log(lenoflast(s));

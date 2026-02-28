@@ -25,3 +25,5 @@ const Anagram = (s, t) => {
 let s = "RAMARAO";
 let t = "ARAORA";
 console.log(Anagram(s, t));
+
+//t-O(n) s-O(1)
